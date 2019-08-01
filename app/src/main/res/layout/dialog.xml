@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="350dp"
+              android:layout_height="255dp"
+              android:paddingTop="100dp"
+              android:paddingLeft="50dp"
+              android:orientation="vertical">
+    <LinearLayout
+
+            android:layout_width="300dp"
+                  android:layout_height="40dp"
+                  android:orientation="horizontal">
+        <TextView
+                android:text="Event :"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_weight="1"
+                android:textColor="#0C0B0B"/>
+        <EditText
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText3" android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColorLink="#03A9F4"
+                android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"/>
+    </LinearLayout>
+
+        <LinearLayout
+
+                android:layout_width="300dp"
+                      android:layout_height="40dp"
+                      android:orientation="horizontal">
+            <TextView
+                    android:text="Detail :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView5" android:layout_weight="1"
+                    android:textColor="#0C0B0B"/>
+            <EditText
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText2" android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColorLink="#03A9F4" android:textCursorDrawable="@android:color/background_dark"/>
+        </LinearLayout>
+    <LinearLayout
+
+            android:layout_width="300dp"
+                  android:layout_height="40dp"
+                  android:orientation="horizontal">
+        <TextView
+                android:text="Type :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView6" android:layout_weight="1"
+                android:textColor="#0C0B0B"/>
+        <Spinner
+                android:layout_width="245dp"
+                android:layout_height="wrap_content" android:id="@+id/spinner"
+                android:entries="@array/array_name"
+                style="@android:style/Widget.Spinner"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#3E80B4"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:text="CANCEL"
+                android:textColor="#5DBCD2"
+                android:textStyle="bold"/>
+
+        <Button
+                android:id="@+id/btn_save"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:text="SAVE"
+                android:textColor="#5DBCD2"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
