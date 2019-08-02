@@ -1,45 +1,52 @@
 package com.example.task;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity (tableName = "records")
 public class Product {
+    @PrimaryKey(autoGenerate = true)
     private int id;
+
+    @ColumnInfo(name ="event")
     private String event;
+
+    @ColumnInfo(name ="detail")
     private String detail;
+
+    @ColumnInfo(name ="type")
     private String type;
 
-    public Product(String event, String detail, String type) {
-        this.id = id;
-        this.event = event;
-        this.detail = detail;
-        this.type = type;
-    }
-
     public int getId() {
-        return this.id;
-    }
-    public String getEvent() {
-        return this.event;
-    }
-
-    public String getDetail() {
-        return this.detail;
-    }
-    public String getType() {
-        return this.type;
+        return id;
     }
 
     public void setId(int id) {
         this.id = id;
     }
 
-    public void setEvent(String name) {
+    public String getEvent() {
+        return event;
+    }
+
+    public void setEvent(String event) {
         this.event = event;
     }
 
-    public void setDetail(String name) {
-        this.event = detail;
+    public String getDetail() {
+        return detail;
     }
 
-    public void setType(String name) {
-        this.event = type;
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
