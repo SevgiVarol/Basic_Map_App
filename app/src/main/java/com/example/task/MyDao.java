@@ -16,6 +16,10 @@ public interface MyDao {
     @Query("SELECT * FROM records ")
     List<Product> getAll();
 
+    @Query("SELECT * FROM records WHERE event LIKE :event_st  ")
+    public Product[] getEventDetails(String event_st);
+
+
     @Query("SELECT COUNT(*) from records")
     int countUsers();
 
